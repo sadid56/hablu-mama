@@ -12,7 +12,9 @@ nav ul li a{
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 500;
+    
 }
+
 nav ul li a:hover{
     color: #e00549;
 }
