@@ -39,3 +39,11 @@ nav ul li a:hover{
 .card-hover:hover .arrow{
     opacity: 1;
 }
+.feature-card:hover .card-arrow{
+    opacity: 1;
+    transition: all ease-in-out 0.4s;
+    
+}
+.card-arrow{
+    opacity: 0;
+}
