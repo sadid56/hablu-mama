@@ -15,7 +15,7 @@
 </head>
 <body>
         <!-- navbar -->
-        <nav class="conatiner mx-auto  lg:px-5 sticky top-0  py-5  z-40">
+        <nav class="max-w-screen-xl conatiner mx-auto  lg:px-5 sticky top-0  py-5  z-40">
           <div class=" flex justify-between items-center">
               <div class="flex items-center gap-4">
                   
@@ -23,7 +23,7 @@
                       <img src="./images/mama.jpg" alt="" class="w-[50px] h-[50px] rounded-full">
                     </div>
                 
-                  <h2 class="text-2xl font-extrabold"><span class="text-[#e00549]">H</span>ablu<span class="text-[#e00549]">M</span>ama</h2>
+                  <h2 class="text-2xl font-extrabold color"><span class="text-[#e00549]">H</span>ablu<span class="text-[#e00549]">M</span>ama</h2>
               </div>
               <div class="">
                 <div class="dropdown">
@@ -36,7 +36,7 @@
                   <li><a href="#fortfolio">PORTFOLIO</a></li>
                   <li><a href="">RESUME</a></li>
                   <li><a href="">CLIENTS</a></li>
-                  <li><a href="">PRICING</a></li>
+                  <li><a href="#blogs">BLOG</a></li>
                   <li><a href="">CONTACT</a></li>
                   
                       <a class="btn bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl text-[#e00549] ">Log in</a>
@@ -53,7 +53,7 @@
                   <li><a href="#fortfolio">PORTFOLIO</a></li>
                   <li><a href="">RESUME</a></li>
                   <li><a href="">CLIENTS</a></li>
-                  <li><a href="">PRICING</a></li>
+                  <li><a href="#blogs">BLOG</a></li>
                   <li><a href="">CONTACT</a></li>
                     
                 </ul>
@@ -65,7 +65,7 @@
             </div>
       </nav>
     <!-- header -->
-    <header class="max-w-screen-xl mx-auto relative ">
+    <header id="top" class="max-w-screen-xl mx-auto relative ">
         <!-- hero -->
         <div class="container mx-auto mt-0 lg:mt-10">
             <div class="hero ">
@@ -116,6 +116,7 @@
     <!-- main -->
     <main class="max-w-screen-xl mx-auto">
       <!-- feature section -->
+      <div class="btn rounded-full text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl sticky right-0 top-1/2"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
       <section id="features" class="container mx-auto">
         <p class="text-[#e00549] tracking-wider font-medium text-center lg:text-start">FEATURES</p>
         <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center lg:text-start">What I Do</h1>
@@ -207,14 +208,16 @@
             
           </div>
         </div>
+        
       </section>
+   
       <hr class="my-10 lg:my-16 border border-black">
       <!-- my portfolio section -->
       <section id="fortfolio" class="container mx-auto px-5  lg:px-0 ">
         <p class="text-[#e00549] tracking-wider font-medium text-center ">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
         <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center">My Portfolio</h1>
               <!-- my portfolio container -->
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-10">
+        <div class="mt-5 lg:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-10">
           <!-- card one -->
           <div class="card bg-[#1e293b] shadow-xl feature-card">
             <div class="p-7 hover:-translate-y-3"><img src="./images/portfolio-01.jpg" class="rounded-xl" /></div>
@@ -233,10 +236,10 @@
               <!-- open modal -->
               <button class="card-arrow" onclick="my_modal_1.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
             <dialog id="my_modal_1" class="modal ">
-              <form method="dialog" class="modal-box bg-[#0f192b]">
+              <form method="dialog" class="modal-box bg-[#0f192b] container">
                 <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
-                    <div class="hero-content flex flex-col">
-                      <img src="./images/portfolio-01.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div class="hero-content flex flex-col lg:flex-row gap-10">
+                      <img src="./images/portfolio-01.jpg" class="w-full rounded-lg shadow-2xl" />
                       <div>
                         <p class="color-gray font-medium my-3">Featured - Design</p>
                         <h1 class="text-3xl font-bold color">The services provide for design</h1>
@@ -277,10 +280,10 @@
                      <!-- open modal -->
                      <button class="card-arrow" onclick="my_modal_2.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
                      <dialog id="my_modal_2" class="modal ">
-                       <form method="dialog" class="modal-box bg-[#0f192b]">
+                       <form method="dialog" class="modal-box bg-[#0f192b] container">
                          <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
-                             <div class="hero-content flex flex-col">
-                               <img src="./images/portfolio-02.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                             <div class="hero-content flex flex-col lg:flex-row gap-10">
+                               <img src="./images/portfolio-02.jpg" class="w-full rounded-lg shadow-2xl" />
                                <div>
                                  <p class="color-gray font-medium my-3">Featured - Design</p>
                                  <h1 class="text-3xl font-bold color">Mobile app landing design & app maintain</h1>
@@ -317,10 +320,10 @@
                      <!-- open modal -->
                      <button class="card-arrow" onclick="my_modal_3.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
                      <dialog id="my_modal_3" class="modal ">
-                       <form method="dialog" class="modal-box bg-[#0f192b]">
+                       <form method="dialog" class="modal-box bg-[#0f192b] container">
                          <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
-                             <div class="hero-content flex flex-col">
-                               <img src="./images/portfolio-03.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                             <div class="hero-content flex flex-col lg:flex-row gap-10">
+                               <img src="./images/portfolio-03.jpg" class="w-full rounded-lg shadow-2xl" />
                                <div>
                                  <p class="color-gray font-medium my-3">Featured - Design</p>
                                  <h1 class="text-3xl font-bold color">Logo desing creativity & Application</h1>
@@ -356,10 +359,10 @@
                      <!-- open modal -->
                      <button class="card-arrow" onclick="my_modal_4.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
                      <dialog id="my_modal_4" class="modal ">
-                       <form method="dialog" class="modal-box bg-[#0f192b]">
+                       <form method="dialog" class="modal-box bg-[#0f192b] container">
                          <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
-                             <div class="hero-content flex flex-col">
-                               <img src="./images/portfolio-04.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                             <div class="hero-content flex flex-col lg:flex-row gap-10">
+                               <img src="./images/portfolio-04.jpg" class="w-full rounded-lg shadow-2xl" />
                                <div>
                                  <p class="color-gray font-medium my-3">Featured - Design</p>
                                  <h1 class="text-3xl font-bold color">Mobile app landing design & services</h1>
@@ -396,10 +399,10 @@
                      <!-- open modal -->
                      <button class="card-arrow" onclick="my_modal_5.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
                      <dialog id="my_modal_5" class="modal ">
-                       <form method="dialog" class="modal-box bg-[#0f192b]">
+                       <form method="dialog" class="modal-box bg-[#0f192b] container">
                          <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
-                             <div class="hero-content flex flex-col">
-                               <img src="./images/portfolio-05.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                             <div class="hero-content flex flex-col lg:flex-row gap-10">
+                               <img src="./images/portfolio-05.jpg" class="w-full rounded-lg shadow-2xl" />
                                <div>
                                  <p class="color-gray font-medium my-3">Featured - Design</p>
                                  <h1 class="text-3xl font-bold color">Design for tecnology & services</h1>
@@ -434,11 +437,11 @@
               <h1 class="text-2xl font-semibold color mt-5">Web for design & services </h1>
                      <!-- open modal -->
                      <button class="card-arrow" onclick="my_modal_6.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
-                     <dialog id="my_modal_6" class="modal ">
-                       <form method="dialog" class="modal-box bg-[#0f192b]">
+                     <dialog id="my_modal_6" class="modal">
+                       <form method="dialog" class="modal-box bg-[#0f192b] container">
                          <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
-                             <div class="hero-content flex flex-col">
-                               <img src="./images/portfolio-06.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                             <div class="hero-content flex flex-col lg:flex-row gap-10">
+                               <img src="./images/portfolio-06.jpg" class="w-full rounded-lg shadow-2xl" />
                                <div>
                                  <p class="color-gray font-medium my-3">Featured - Design</p>
                                  <h1 class="text-3xl font-bold color">Web for design & services </h1>
@@ -458,6 +461,204 @@
           </div>
         </div>
 
+      </section>
+      <!-- My blogs -->
+      <hr class="my-10 lg:my-16 border border-black">
+      <section id="blogs" class="container mx-auto px-5 lg:px-0">
+            <p class="text-[#e00549] tracking-wider font-medium text-center ">VISIT MY BLOG AND KEEP YOUR FEEDBACK</p>
+        <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center">My Blog</h1>
+        <!-- blog container -->
+        <div class="mt-5 lg:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- blog one -->
+          <div class="card bg-[#1e293b] shadow-xl feature-card">
+            <div class="p-7 hover:-translate-y-3"><img src="./images/blog-01.jpg" class="rounded-xl" /></div>
+            <div class="card-body">
+              <div class="flex items-center">
+                <p class="text-[#e00549] tracking-wider font-medium ">CANADA</p>
+                
+              <div class="flex gap-2 items-center">
+                
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="color-gray font-medium">2 min read</p>
+                
+               
+              </div>
+              </div>
+              <h1 class="text-2xl font-semibold color mt-5">T-shirt design is the part of design</h1>
+              <!-- open modal -->
+              <button class="card-arrow" onclick="my_modal_7.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
+            <dialog id="my_modal_7" class="modal ">
+              <form method="dialog" class="modal-box bg-[#0f192b] container">
+                <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
+                    <div class="hero-content flex flex-col">
+                      <img src="./images/blog-01.jpg" class="w-full rounded-lg shadow-2xl" />
+                      <div>
+                        <p class="color-gray font-medium my-3">2 May, 2021</p>
+                        <h1 class="text-3xl font-bold color">Digital Marketo to Their New Office.</h1>
+                        <p class="my-5 color-gray">Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                        <h1 class="text-3xl font-bold color">Nobis eleifend option conguenes.</h1>
+
+                        <p class="my-5 color-gray">Mauris tempor, orci id pellentesque convallis, massa mi congue eros, sed posuere massa nunc quis dui. Integer ornare varius mi, in vehicula orci scelerisque sed. Fusce a massa nisi. Curabitur sit amet suscipit nisl. Sed eget nisl laoreet, suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in rutrum erat dignissim id.</p>
+
+                        <h1 class="text-3xl font-bold color">Leave a Replay</h1>
+
+
+                        <div class="flex flex-col lg:flex-row gap-10 mt-5">
+                          <div class="flex flex-col gap-5">
+                            <input type="text" placeholder="Name" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                            <input type="email" placeholder="Email" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                            <input type="text" placeholder="Website" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                          </div>
+                          <div>
+                            <textarea class="textarea textarea-bordered bg-[#1e293b]" placeholder="Comment"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="flex gap-5 mt-5">
+                          <button class="btn text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-800 shadow-2xl hover:-translate-y-2 ">submit now</button>
+
+
+                          
+                        </div>
+                         
+                      </div>
+                    </div>
+              </form>
+            </dialog>
+              
+
+
+
+
+            </div>
+          </div>
+          <!-- blog two -->
+          <div class="card bg-[#1e293b] shadow-xl feature-card">
+            <div class="p-7 hover:-translate-y-3"><img src="./images/blog-02.jpg" class="rounded-xl" /></div>
+            <div class="card-body">
+              <div class="flex items-center">
+                <p class="text-[#e00549] tracking-wider font-medium ">DEVELOPMENT</p>
+                
+              <div class="flex gap-2 items-center">
+                
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="color-gray font-medium">2 hour read</p>
+                
+               
+              </div>
+              </div>
+              <h1 class="text-2xl font-semibold color mt-5">The services provide for design</h1>
+              <!-- open modal -->
+              <button class="card-arrow" onclick="my_modal_8.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
+            <dialog id="my_modal_8" class="modal ">
+              <form method="dialog" class="modal-box bg-[#0f192b] container">
+                <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
+                    <div class="hero-content flex flex-col">
+                      <img src="./images/blog-02.jpg" class="w-full rounded-lg shadow-2xl" />
+                      <div>
+                        <p class="color-gray font-medium my-3">4 May, 2022</p>
+                        <h1 class="text-3xl font-bold color">The services provide for design</h1>
+                        <p class="my-5 color-gray">Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                        <h1 class="text-3xl font-bold color">Nobis eleifend option conguenes.</h1>
+
+                        <p class="my-5 color-gray">Mauris tempor, orci id pellentesque convallis, massa mi congue eros, sed posuere massa nunc quis dui. Integer ornare varius mi, in vehicula orci scelerisque sed. Fusce a massa nisi. Curabitur sit amet suscipit nisl. Sed eget nisl laoreet, suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in rutrum erat dignissim id.</p>
+
+                        <h1 class="text-3xl font-bold color">Leave a Replay</h1>
+
+
+                        <div class="flex flex-col lg:flex-row gap-10 mt-5">
+                          <div class="flex flex-col gap-5">
+                            <input type="text" placeholder="Name" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                            <input type="email" placeholder="Email" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                            <input type="text" placeholder="Website" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                          </div>
+                          <div>
+                            <textarea class="textarea textarea-bordered bg-[#1e293b]" placeholder="Comment"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="flex gap-5 mt-5">
+                          <button class="btn text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-800 shadow-2xl hover:-translate-y-2 ">submit now</button>
+
+
+                          
+                        </div>
+                         
+                      </div>
+                    </div>
+              </form>
+            </dialog>
+              
+
+
+
+
+            </div>
+          </div>
+          <!-- blog three -->
+          <div class="card bg-[#1e293b] shadow-xl feature-card">
+            <div class="p-7 hover:-translate-y-3"><img src="./images/blog-03.jpg" class="rounded-xl" /></div>
+            <div class="card-body">
+              <div class="flex items-center">
+                <p class="text-[#e00549] tracking-wider font-medium ">APPLICATION</p>
+                
+              <div class="flex gap-2 items-center">
+                
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="color-gray font-medium">5 min read</p>
+                
+               
+              </div>
+              </div>
+              <h1 class="text-2xl font-semibold color mt-5">Mobile app landing design & app maintain</h1>
+              <!-- open modal -->
+              <button class="card-arrow" onclick="my_modal_9.showModal()"><i class="fa-solid fa-angles-right text-[#e00549] text-2xl"></i></button>
+            <dialog id="my_modal_9" class="modal ">
+              <form method="dialog" class="modal-box bg-[#0f192b] container">
+                <button class="btn text-xl btn-circle bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl hover:text-[#e00549] absolute right-2 top-2">✕</button>          
+                    <div class="hero-content flex flex-col">
+                      <img src="./images/blog-03.jpg" class="w-full rounded-lg shadow-2xl" />
+                      <div>
+                        <p class="color-gray font-medium my-3">5 May, 2021</p>
+                        <h1 class="text-3xl font-bold color">Mobile app landing design & app maintain</h1>
+                        <p class="my-5 color-gray">Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                        <h1 class="text-3xl font-bold color">Nobis eleifend option conguenes.</h1>
+
+                        <p class="my-5 color-gray">Mauris tempor, orci id pellentesque convallis, massa mi congue eros, sed posuere massa nunc quis dui. Integer ornare varius mi, in vehicula orci scelerisque sed. Fusce a massa nisi. Curabitur sit amet suscipit nisl. Sed eget nisl laoreet, suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in rutrum erat dignissim id.</p>
+
+                        <h1 class="text-3xl font-bold color">Leave a Replay</h1>
+
+
+                        <div class="flex flex-col lg:flex-row gap-10 mt-5">
+                          <div class="flex flex-col gap-5">
+                            <input type="text" placeholder="Name" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                            <input type="email" placeholder="Email" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                            <input type="text" placeholder="Website" class="input input-bordered w-full max-w-xs bg-[#1e293b]" />
+                          </div>
+                          <div>
+                            <textarea class="textarea textarea-bordered bg-[#1e293b]" placeholder="Comment"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="flex gap-5 mt-5">
+                          <button class="btn text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-800 shadow-2xl hover:-translate-y-2 ">submit now</button>
+
+
+                          
+                        </div>
+                         
+                      </div>
+                    </div>
+              </form>
+            </dialog>
+              
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     
