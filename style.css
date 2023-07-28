@@ -21,3 +21,11 @@ nav ul li a:hover{
 .color-gray{
     color: #c4cfde;
 }
+.color{
+    color: #c4cfde;
+}
+.card-hover:hover{
+    transform: translateY(-0.50rem);
+    transition: all ease-in 0.2s;
+    
+}
