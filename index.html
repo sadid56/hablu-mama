@@ -15,7 +15,7 @@
 </head>
 <body>
         <!-- navbar -->
-        <nav class="max-w-screen-xl conatiner mx-auto  lg:px-5 sticky top-0  py-5  z-40">
+        <nav class="max-w-screen-xl conatiner mx-auto  lg:px-5 sticky top-0  py-5  z-50">
           <div class=" flex justify-between items-center">
               <div class="flex items-center gap-4">
                   
@@ -69,9 +69,9 @@
         <!-- hero -->
         <div class="container mx-auto mt-0 lg:mt-10">
             <div class="hero ">
-                <div class="hero-content flex-col lg:flex-row-reverse gap-16">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-16 flex-1">
                   <img src="./images/coder cat.webp" class="max-w-xs rounded-lg shadow-2xl" />
-                  <div class="text-center lg:text-start px-5 lg:px-0">
+                  <div class="text-center lg:text-start px-5 lg:px-0 flex-1">
                     <p class="mb-5 tracking-wide color-gray">WELCOME TO MY WORLD</p>
                     <h1 class="text-4xl  md:text-5xl font-bold color">Hi, i'm <span class="text-[#e00549]">Hablu</span><br> a Web developer</h1>
                     <p class="py-6 color-gray">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
@@ -82,7 +82,7 @@
                             <li class="btn bg-gradient-to-b from-[#1d2025] to-[#23272b] drop-shadow-xl hover:bg-[#212428] hover:-translate-y-1 hover:text-white"><a href="https://www.facebook.com/sadidhasan.hasan.5" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook "><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                             </a></li>
-                            <li  class="btn bg-gradient-to-b from-[#1d2025] to-[#23272b] drop-shadow-xl hover:bg-[#212428] hover:-translate-y-1 hover:text-white"><a href="">
+                            <li  class="btn bg-gradient-to-b from-[#1d2025] to-[#23272b] drop-shadow-xl hover:bg-[#212428] hover:-translate-y-1 hover:text-white"><a href="https://www.instagram.com/sadidhasan56/" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                             </a></li>
                             <li  class="btn bg-gradient-to-b from-[#1d2025] to-[#23272b] drop-shadow-xl hover:bg-[#212428] hover:-translate-y-1 hover:text-white"><a href="">
@@ -104,11 +104,11 @@
               </div>
         </div>
         <!-- fixed icon -->
-        <div class="w-fit fixed right-2 top-1/2 bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl p-2 lg:p-5   rounded z-50 ">
+        <div class="w-fit fixed right-2 top-1/2 bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl p-2 lg:p-5   rounded z-40">
         <ul class="space-y-4 text-xl">
           <li><a href="https://www.facebook.com/sadidhasan.hasan.5" target="_blank"><i class="fa-brands fa-facebook text-[#0d8bf0] text-2xl"></i></a></li>
-          <li><a href="tiktok.com/@sadid__s" target="_blank"><i class="fa-brands fa-tiktok text-[#ff0050] text-2xl"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-instagram text-[#cd486b] text-2xl"></i></a></li>
+          <li><a href="https://www.tiktok.com/@sadid__s" target="_blank"><i class="fa-brands fa-tiktok text-[#ff0050] text-2xl"></i></a></li>
+          <li><a href="https://www.instagram.com/sadidhasan56/" target="_blank"><i class="fa-brands fa-instagram text-[#cd486b] text-2xl"></i></a></li>
         </ul>
         </div>
     </header>
@@ -116,7 +116,13 @@
     <!-- main -->
     <main class="max-w-screen-xl mx-auto">
       <!-- feature section -->
-      <div class="btn rounded-full text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl sticky right-0 top-1/2 z-50"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+      <!-- top -->
+      <div class="flex flex-col gap-5 w-fit sticky right-0 top-1/2 z-50">
+        <div class="btn rounded-full text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+      <!-- down -->
+      <div class="btn rounded-full text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl "><a href="#down"><i class="fa-solid fa-arrow-down"></i></a></div>
+      </div>
+
       <section id="features" class="container mx-auto">
         <p class="text-[#e00549] tracking-wider font-medium text-center lg:text-start">FEATURES</p>
         <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center lg:text-start">What I Do</h1>
@@ -681,7 +687,7 @@
       <hr class="my-10 lg:my-16 border border-black">
     </main>
     <!-- footer -->
-    <footer>
+    <footer id="down">
       <div class="footer p-10 text-base-content max-w-screen-xl mx-auto ">
         <div class="flex flex-col items-center gap-2 justify-center">
                   
