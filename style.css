@@ -16,7 +16,7 @@ nav ul li a{
     
 }
 nav{
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
 }
 
 nav ul li a:hover{
@@ -28,22 +28,30 @@ nav ul li a:hover{
 .color{
     color: #c4cfde;
 }
-.card-hover:hover{
-    transform: translateY(-0.50rem);
-    transition: all ease-in 0.2s;
+
+
+
+/* desktop card mous hover */
+@media screen  and (min-width:922px) {
     
-}
-.arrow{
-    opacity: 0;
-}
-.card-hover:hover .arrow{
-    opacity: 1;
-}
-.feature-card:hover .card-arrow{
-    opacity: 1;
-    transition: all ease-in-out 0.4s;
     
-}
-.card-arrow{
-    opacity: 0;
+    .card-hover:hover{
+        transform: translateY(-0.50rem);
+        transition: all ease-in 0.2s;
+        
+    }
+    .arrow{
+        opacity: 0;
+    }
+    .card-hover:hover .arrow{
+        opacity: 1;
+    }
+    .feature-card:hover .card-arrow{
+        opacity: 1;
+        transition: all ease-in-out 0.4s;
+        
+    }
+    .card-arrow{
+        opacity: 0;
+    }
 }

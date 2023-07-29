@@ -104,7 +104,7 @@
               </div>
         </div>
         <!-- fixed icon -->
-        <div class="w-fit fixed right-2 top-1/2 bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl p-2 lg:p-5   rounded z-50">
+        <div class="w-fit fixed right-2 top-1/2 bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl p-2 lg:p-5   rounded z-50 ">
         <ul class="space-y-4 text-xl">
           <li><a href="https://www.facebook.com/sadidhasan.hasan.5" target="_blank"><i class="fa-brands fa-facebook text-[#0d8bf0] text-2xl"></i></a></li>
           <li><a href="tiktok.com/@sadid__s" target="_blank"><i class="fa-brands fa-tiktok text-[#ff0050] text-2xl"></i></a></li>
@@ -669,7 +669,8 @@
         <div class="flex flex-col gap-5 mt-5 lg:mt-16">
           <div class="flex  gap-5">
             <input type="text" placeholder="Name" class="input input-bordered input-error  w-1/2 bg-[#1e293b] required " />
-            <input type="number" placeholder="number" class="input input-bordered input-error w-1/2 bg-[#1e293b]" />
+            <input type="tel" placeholder="number" class="input input-bordered input-error w-1/2 bg-[#1e293b]" 
+            />
           </div>
           <input type="email" placeholder="Email" class="input input-bordered input-error w-full  bg-[#1e293b]" />
           <input type="text" placeholder="Subject" class="input input-bordered input-error w-full  bg-[#1e293b]" />
@@ -679,9 +680,10 @@
       </section>
       <hr class="my-10 lg:my-16 border border-black">
     </main>
-    <footer class="footer footer-center p-10  text-primary-content max-w-screen-xl mx-auto h-[300px]">
-      <div>
-        <div class="flex items-center gap-4">
+    <!-- footer -->
+    <footer>
+      <div class="footer p-10 text-base-content max-w-screen-xl mx-auto ">
+        <div class="flex flex-col items-center gap-2 justify-center">
                   
           <div class="  border-2 border-gray-500 shadow-2xl rounded-full">
             <img src="./images/mama.jpg" alt="" class="w-[50px] h-[50px] rounded-full">
@@ -689,9 +691,30 @@
       
         <h2 class="text-2xl font-extrabold color"><span class="text-[#e00549]">H</span>ablu<span class="text-[#e00549]">M</span>ama</h2>
     </div>
-        <p class="color-gray font-semibold text-xl mt-t">Copyright © 2023 - All right reserved</p>
+    
+      
+      <div>
+        <span class="footer-title">Services <i class="fa-solid fa-satellite-dish ml-2"></i></span> 
+        <a class="link link-hover">developer</a> 
+        <a class="link link-hover">Design</a> 
+        <a class="link link-hover">Marketing</a> 
+        <a class="link link-hover">Photoshop</a>
       </div> 
-     
+      <div>
+        <span class="footer-title ">Call Me <i class="fa-solid fa-phone ml-2"></i></span> 
+        <a class="link link-hover">01739 85 97 56</a> 
+        <a class="link link-hover">01969 15 52 62</a>      
+      </div> 
+      <div>
+        <span class="footer-title">Personal Email <i class="fa-solid fa-envelope ml-2"></i></span> 
+        <a class="link link-hover">sadidhasan56@gmail.com</a> 
+        <a class="link link-hover">sadidhasan77@gmail.com</a> 
+      </div>
+      
+    </div>
+    <div>
+      <p class="text-sm lg:text-xl color-gray font-semibold text-center underline" >Copyright &copy; 2023 - All right reserved by HabluMama</p>
+    </div>
     </footer>
 </body>
 </html>
