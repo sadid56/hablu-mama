@@ -20,7 +20,9 @@ nav{
 }
 
 nav ul li a:hover{
-    color: #e00549;
+   border-bottom: 2px solid #e00549;
+
+    /* color: #e00549; */
 }
 .color{
     color: #c4cfde;
