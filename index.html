@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" data-theme="light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HabluMama</title>
     <link rel="stylesheet" href="style.css">
@@ -40,6 +40,10 @@
                   <li><a href="">CLIENTS</a></li>
                   <li><a href="#blogs">BLOG</a></li>
                   <li><a href="#contact">CONTACT</a></li>
+                  <div class="space-x-2">
+                    <button onclick="white()"><i class="fa-regular fa-sun"></i></button>
+                    <button onclick="black()"><i class="fa-regular fa-moon"></i></button>
+                  </div>
                   
                       <a class="btn bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl text-[#e00549] ">Log in</a>
                     
@@ -57,6 +61,10 @@
                   <li><a href="">CLIENTS</a></li>
                   <li><a href="#blogs">BLOG</a></li>
                   <li><a href="#contact">CONTACT</a></li>
+                  <div class="space-x-2">
+                    <button onclick="white()"><i class="fa-regular fa-sun"></i></button>
+                    <button onclick="black()"><i class="fa-regular fa-moon"></i></button>
+                  </div>
                     
                 </ul>
                 <div class="hidden lg:flex">
@@ -75,7 +83,7 @@
                   <img src="./images/coder cat.webp" class="max-w-xs rounded-lg shadow-2xl" />
                   <div class="text-center lg:text-start px-5 lg:px-0 flex-1">
                     <p class="mb-5 tracking-wide color">WELCOME TO MY WORLD</p>
-                    <h1 class="text-4xl  md:text-5xl font-bold color">Hi, i'm <span class="text-[#e00549]">Hablu</span><br> a Web developer</h1>
+                    <h1 class="text-4xl  md:text-5xl font-bold color anime-text">Hi, i'm <span class="text-[#e00549] ">Hablu</span><br> a Web developer</h1>
                     <p class="py-6 color">I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
                     <div class="flex flex-col md:flex-row gap-10 justify-between">
                         <div>
@@ -682,8 +690,8 @@
           </div>
           <input type="email" placeholder="Email" class="input input-bordered input-error w-full  bg-[#1e293b]" />
           <input type="text" placeholder="Subject" class="input input-bordered input-error w-full  bg-[#1e293b]" />
-          <textarea class="textarea textarea-error bg-[#1e293b] h-[150px]" placeholder="Your Message"></textarea>
-          <button class="btn bg-[#1e293b] text-[#e00549] font-semibold"><a href="">send Message <i class="fa-solid fa-arrow-right pl-2"></i></a></button>
+          <textarea class="input textarea textarea-error bg-[#1e293b] h-[150px]" placeholder="Your Message"></textarea>
+          <button class="input btn bg-[#1e293b] text-[#e00549] font-semibold border"><a href="">send Message <i class="fa-solid fa-arrow-right pl-2"></i></a></button>
         </div>
       </section>
       <hr class="my-10 lg:my-16 border border-black">
@@ -702,19 +710,19 @@
     
       
       <div class="text-gray-400">
-        <span class="font-semibold text-sm uppercase text-gray-200">Services <i class="fa-solid fa-satellite-dish ml-2"></i></span> 
+        <span class="font-semibold text-sm uppercase text-gray-200 .span">Services <i class="fa-solid fa-satellite-dish ml-2"></i></span> 
         <a class="link link-hover ">developer</a> 
         <a class="link link-hover ">Design</a> 
         <a class="link link-hover ">Marketing</a> 
         <a class="link link-hover ">Photoshop</a>
       </div> 
       <div class="text-gray-400">
-        <span class="font-semibold text-sm uppercase text-gray-200">Call Me <i class="fa-solid fa-phone ml-2"></i></span> 
+        <span class="font-semibold text-sm uppercase text-gray-200 .span">Call Me <i class="fa-solid fa-phone ml-2"></i></span> 
         <a class="link link-hover ">01739 85 97 56</a> 
         <a class="link link-hover ">01969 15 52 62</a>      
       </div> 
       <div  class="text-gray-400">
-        <span class="font-semibold text-sm uppercase text-gray-200">Personal Email <i class="fa-solid fa-envelope ml-2"></i></span> 
+        <span class="font-semibold text-sm uppercase text-gray-200 .span">Personal Email <i class="fa-solid fa-envelope ml-2"></i></span> 
         <a class="link link-hover ">sadidhasan56@gmail.com</a> 
         <a class="link link-hover ">sadidhasan77@gmail.com</a> 
       </div>
@@ -729,13 +737,15 @@
 
     <!--! our aos fade  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
     <script>
       AOS.init(
         {
           offset:200,
           duration: 1000,
+          
         }
       );
     </script>
 </body>
-</html>
+</ht

@@ -27,6 +27,17 @@ nav ul li a:hover{
 .color{
     color: #c4cfde;
 }
+/* .anime-text::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    border-left: 2px solid #e00549;
+    animation: animate 4s steps(12) infinite;
+} */
 
 
 
