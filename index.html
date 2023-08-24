@@ -4,8 +4,10 @@
     <meta charset="UTF-8" data-theme="light">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HabluMama</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/mama.jpg" type="image/x-icon">
+    <!--! css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animat.css">
     <!--! aos fade link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--! tailwindcss and daisy ui cdn link -->
@@ -77,15 +79,17 @@
     <!-- header -->
     <header id="top" class="max-w-screen-xl mx-auto relative ">
         <!-- hero -->
-        <div class="container mx-auto mt-0 lg:mt-10">
+        <div class="container mx-auto mt-0 lg:mt-10 lg:border-l-2 border-[#e00549]">
             <div class="hero ">
                 <div class="hero-content flex-col lg:flex-row-reverse gap-16 flex-1">
                   <img src="./images/coder cat.webp" class="max-w-xs rounded-lg shadow-2xl" />
                   <div class="text-center lg:text-start px-5 lg:px-0 flex-1">
-                    <p class="mb-5 find-me color">WELCOME TO MY WORLD</p>
+                    <div class="welcome-container mb-5">
+                      <span class="text first-text text-[16px] md:text-xl">WELCOME TO MY WORLD</span>
+                     </div>
                     <h1 class="text-4xl  md:text-5xl font-bold color anime-text">Hi, i'm <span class="text-[#e00549] ">Hablu</span></h1>
-                    <div id="sd" class="style-container">
-                      <span id="text-animat" class="text second-text"></span>
+                    <div class="style-container">
+                      <span class="text second-text"></span>
                      </div>
                     <p class="py-6 color">My name is Sadid hasan i am from Bangladesh and i am none CSE student but i love computer sceince and programming language. I have started in web Development and my dream as a junior web developer and remote job❤ </p>
                     <div class="flex flex-col md:flex-row gap-10 justify-between">
@@ -128,19 +132,16 @@
     <hr class="my-10 lg:my-16 border border-[#0e1829]">
     <!-- main -->
     <main class="max-w-screen-xl mx-auto">
-      <!-- feature section -->
-      <!-- top -->
-      <!-- <div class="flex flex-col gap-5 w-fit sticky right-0 top-1/2 z-50">
-        <div class="btn rounded-full text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div> -->
-      <!-- down -->
-      <!-- <div class="btn rounded-full text-[#e00549] bg-gradient-to-b from-[#1d2025] to-gray-700 shadow-2xl "><a href="#down"><i class="fa-solid fa-arrow-down"></i></a></div> -->
-      </div>
-
-      <section id="features" class="container mx-auto">
-        <p class="text-[#e00549] tracking-wider font-medium text-center lg:text-start">FEATURES</p>
-        <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center lg:text-start">What I Do</h1>
+      <section id="features" class="container mx-auto px-5 lg:px-0">
+        <div data-aos="flip-left" class="border-l-2 border-[#e00549] pl-5">
+          <p class="text-[#e00549] tracking-wider font-medium text-center lg:text-start">FEATURES</p>
+        <!-- <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center lg:text-start">What I Do</h1> -->
+        <div class="future-animat-container">
+          <span class="text first-text">What I Do</span>
+         </div>
+        </div>
         <!-- features container -->
-        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 px-5 lg:px-0">
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14 ">
           <!-- feature one -->
           <div class="bg-[#1e293b] rounded-lg shadow-xl"data-aos="fade-right">
         <div class="space-y-5 p-10 card-hover">
@@ -233,8 +234,12 @@
       <hr class="my-10 lg:my-16 border border-[#0e1829]">
       <!-- my portfolio section -->
       <section id="fortfolio" class="container mx-auto px-5  lg:px-0 ">
-        <p class="text-[#e00549] tracking-wider font-medium text-center ">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
-        <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center">My Portfolio</h1>
+        <div data-aos="flip-left" class="border-l-2 border-[#e00549] pl-5">
+          <p class="text-[#e00549] tracking-wider font-medium text-center lg:text-start">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
+        <div class="portfolio-animat-container">
+          <span class="text first-text">Porfolio</span>
+         </div>
+        </div>
               <!-- my portfolio container -->
         <div class="mt-5 lg:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-10">
           <!-- card one -->
@@ -484,8 +489,12 @@
       <!-- My blogs -->
       <hr class="my-10 lg:my-16 border border-[#0c1524]">
       <section id="blogs" class="container mx-auto px-5 lg:px-0">
-            <p class="text-[#e00549] tracking-wider font-medium text-center ">VISIT MY BLOG AND KEEP YOUR FEEDBACK</p>
-        <h1 class="text-4xl lg:text-6xl font-extrabold color mt-5 text-center">My Blog</h1>
+        <div data-aos="flip-left" class="border-l-2 border-[#e00549] pl-5">
+          <p class="text-[#e00549] tracking-wider font-medium text-center lg:text-start">VISIT MY BLOGS AND KEEP YOUR FEEDBACK</p>
+        <div class="blog-animat-container">
+          <span class="text first-text">Blogs</span>
+         </div>
+        </div>
         <!-- blog container -->
         <div class="mt-5 lg:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <!-- blog one -->

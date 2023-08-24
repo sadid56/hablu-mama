@@ -1,0 +1,153 @@
+/* text animation */
+.style-container{
+    overflow: hidden;
+}
+.style-container .text{
+    position: relative;
+    color: #c4cfde;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.style-container .text.second-text::before{
+    content: "";
+    background-color: #101f35;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-left: 2px solid #e00549;
+    animation: animate 4s steps(50) infinite;
+}
+@keyframes animate{
+    40% , 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/* welcome animation */
+
+.welcome-container{
+    overflow: hidden;
+}
+.welcome-container .text{
+    position: relative;
+    color: #c4cfde;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.welcome-container .text.first-text::before{
+    content: "";
+    background-color: #101f35;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* border-left: 2px solid #e00549; */
+    animation: animatet 25s steps(50) infinite;
+}
+@keyframes animatet{
+     40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/* multiple text animation  html body te gradient color use korar karone onek gula same condition use kora laglo😑*/
+.future-animat-container{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.future-animat-container .text{
+    position: relative;
+    color: #c4cfde;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+.future-animat-container .text.first-text::before{
+    content: "";
+    background-color: #0f1e33;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: animated 5s steps(50) infinite;
+}
+@keyframes animated{
+    40%, 60%{
+       left: 100%;
+   }
+   100%{
+       left: 0%;
+   }
+}
+
+.portfolio-animat-container{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.portfolio-animat-container .text{
+    position: relative;
+    color: #c4cfde;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+.portfolio-animat-container .text.first-text::before{
+    content: "";
+    background-color: #101d32;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: animated 3s steps(50) infinite;
+}
+@keyframes animated{
+    40%, 60%{
+       left: 100%;
+   }
+   100%{
+       left: 0%;
+   }
+}
+
+
+.blog-animat-container{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.blog-animat-container .text{
+    position: relative;
+    color: #c4cfde;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+.blog-animat-container .text.first-text::before{
+    content: "";
+    background-color: #0f1b2e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: animated 3s steps(50) infinite;
+}
+@keyframes animated{
+    40%, 60%{
+       left: 100%;
+   }
+   100%{
+       left: 0%;
+   }
+}
