@@ -1,4 +1,4 @@
-// //! theme
+//! theme
 // function white(){
 //     document.body.style.backgroundColor = 'white';
 //     const p = document.querySelectorAll('p');
@@ -21,6 +21,11 @@
 //     for(const pStyle of input){
 //     pStyle.style.backgroundColor = 'transparent'
 // }
+//   const textAnimat = document.getElementById('text-animat');
+//   textAnimat.style.color = 'black'
+//   const textBgAnimat = document.getElementById('text-animat');
+//   textBgAnimat.style.backgroundColor = 'whit'
+
 // }
 // function black(){
 //     document.body.style.backgroundColor = '#0f192b';

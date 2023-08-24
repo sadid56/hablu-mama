@@ -7,7 +7,7 @@
 body{
     /* background-color: #212428; */
     font-family: 'Roboto', sans-serif;
-    background-color: #0f192b;
+    
 }
 nav ul li a{
     font-size: 14px;
@@ -72,7 +72,7 @@ nav ul li a:hover{
 
 .style-container .text.second-text::before{
     content: "";
-    background-color: #0f192b;
+    background-color: #101f35;
     top: 0;
     left: 0;
     width: 100%;
